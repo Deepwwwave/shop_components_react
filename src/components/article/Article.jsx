@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function Article() {
+export default function Article({ title, imgPath }) {
   return (
-    <>
-        ARTICLE
-    </>
-  )
+    <article>
+      <h3>{title}</h3>
+      <img src={imgPath} alt={title} />
+    </article>
+  );
 }

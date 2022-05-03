@@ -1,7 +1,7 @@
 import {LOAD_ALL_ARTICLES} from "../type"
 
 const INITIAL_STATE = {
-    datas: [],
+    articles: [],
 }
 
 const articlesReducer = (state = INITIAL_STATE, action) => {
