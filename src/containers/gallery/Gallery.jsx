@@ -1,13 +1,17 @@
 import React, { Fragment } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Article from "../../components/article/Article";
 import Button from "../../components/button/Button";
+import { loadArticlesCart } from "../../redux/articles/action";
 
 export default function Gallery() {
+
+  const dispatch = useDispatch();
   const { articles } = useSelector((state) => state.articlesReducer);
 
+
   const addCart = (key) => {
-      dispatchEvent(loadArticlesCart(key))  //  EN COURS
+      dispatch(loadArticlesCart(key))  //  EN COURS
   }
 
   return (
