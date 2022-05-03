@@ -6,7 +6,7 @@ import articlesReducer from "./articles/articlesReducer";
 // import productReducer from "./reducers/productReducer";
 
 const rootReducer = combineReducers({
-    articlesReducer
+    articlesReducer,
 });
 
 

@@ -1,4 +1,4 @@
-import {LOAD_ALL_ARTICLES} from '../type'
+import {LOAD_ALL_ARTICLES, COUNT_CART, LOAD_ARTICLES_CART} from '../type'
 import axios from 'axios'
 
 export const loadAllArticles = () => async (dispatch) => {
@@ -10,3 +10,18 @@ export const loadAllArticles = () => async (dispatch) => {
         payload: request.data,
     })
 }
+
+export const loadArticlesCart = (datas) => {
+    return {
+        type:LOAD_ARTICLES_CART,
+        payload: datas,
+
+    }
+}
+
+export const countCart = () => {
+    return {
+        type: COUNT_CART,
+    }
+}
+

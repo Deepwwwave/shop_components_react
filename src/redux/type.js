@@ -1,1 +1,5 @@
 export const LOAD_ALL_ARTICLES = "LOAD_ALL_ARTICLES"
+
+export const LOAD_ARTICLES_CART = "LOAD_ARTICLES_CART"
+
+export const COUNT_CART = "COUNT_CART"
